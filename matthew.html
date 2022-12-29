@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="matthew.css" />
+    </head>
+    <body>
+        <div class="paragraph-container">
+            <div id="entry-paragraph">
+                <header>
+                    <h1>MATTHEW'S CORRELATION COEFFICIENT(MCC)</h1>
+                </header>
+                <p>
+                    The Matthew's correlation coefficient (MCC) is a measure of
+                    the quality of a binary classification. It takes into
+                    account true and false positives and negatives and is
+                    generally regarded as a balanced measure, unlike other
+                    measures such as precision and recall which may be biased
+                    towards one class or the other. <br />The MCC is defined as:
+                    <br />
+                    <b>
+                        MCC = (TP * TN - FP * FN) / sqrt((TP + FP) * (TP + FN) *
+                        (TN + FP) * (TN + FN))
+                    </b>
+                    <br /><br />
+                    Where TP is the number of true positives, TN is the number
+                    of true negatives, FP is the number of false positives, and
+                    FN is the number of false negatives. The MCC ranges from -1
+                    to 1, where a value of 1 indicates a perfect prediction, a
+                    value of 0 indicates no better than random prediction, and a
+                    value of -1 indicates a completely incorrect prediction. The
+                    MCC is often used in the evaluation of machine learning
+                    models, particularly in the field of bioinformatics. It is
+                    also useful when comparing models, as it takes into account
+                    all four possible outcomes of a binary classification (true
+                    positive, true negative, false positive, false negative) and
+                    is therefore less sensitive to class imbalance than other
+                    measures such as accuracy.
+                </p>
+            </div>
+        </div>
+        <div id="example-table-container">
+            <table class="example-table">
+                <tr>
+                    <th>Patient ID</th>
+                    <th>Actual Class</th>
+                    <th>Predicted Class</th>
+                    <th>TP</th>
+                    <th>TN</th>
+                    <th>FP</th>
+                    <th>FN</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Positive</td>
+                    <td>Positive</td>
+                    <td>&#10003;</td>
+                    <td>&#10060;</td>
+                    <td>&#10060;</td>
+                    <td>&#10060;</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Positive</td>
+                    <td>Negative</td>
+                    <td>&#10060;</td>
+                    <td>&#10060;</td>
+                    <td>&#10060;</td>
+                    <td>&#10003;</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Negative</td>
+                    <td>Positive</td>
+                    <td>&#10060;</td>
+                    <td>&#10060;</td>
+                    <td>&#10003;</td>
+                    <td>&#10060;</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Negative</td>
+                    <td>Negative</td>
+                    <td>&#10060;</td>
+                    <td>&#10003;</td>
+                    <td>&#10060;</td>
+                    <td>&#10060;</td>
+                </tr>
+            </table>
+        </div>
+        <div id="table-container"></div>
+
+        <div id="secondtable"></div>
+        <div id="contingency"></div>
+        <div id="calculation"></div>
+
+        <script src="data.js"></script>
+        <script src="matthew.js"></script>
+    </body>
+</html>

@@ -1,0 +1,178 @@
+body {
+    margin-top: 10em;
+    background-color: #f1f1f1;
+}
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.178);
+}
+
+th,
+td {
+    text-align: center;
+    padding: 16px;
+}
+
+#secondtable > table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+#contingency > table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+th {
+    background-color: #6c757d;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 16px;
+}
+
+td {
+    font-size: 24px;
+    color: #000000;
+}
+
+div#example-table-container > table.example-table tr:nth-child(2) {
+    background-color: #fab8b8;
+}
+div#example-table-container > table.example-table tr:last-child {
+    background-color: #fab8b8;
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.paragraph-container {
+    animation: fade-in 2s ease-in-out;
+
+    opacity: 0;
+    font-size: 18px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+    display: flex;
+}
+.paragraph-container h1 {
+    color: crimson;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+#entry-paragraph {
+    width: 50%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+#table-container {
+    opacity: 0;
+    animation: fade-in 2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#table-container.mehmet {
+    opacity: 1;
+}
+#secondtable {
+    opacity: 0;
+    animation: fade-in 2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+#secondtable.opacity {
+    opacity: 1;
+}
+#contingency {
+    opacity: 0;
+    animation: fade-in 2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+#contingency.opacity {
+    opacity: 1;
+}
+#calculation {
+    opacity: 0;
+    transition:all 2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.regular {
+    animation: fade-in 2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+}
+.regular-anim {
+    font-size: 36px;
+    color: red;
+}
+#calculation.opacity {
+    opacity: 1;
+}
+.calculation-formula {
+    color: rgb(53, 82, 83);
+    font-size: 24px;
+}
+.calculated-value {
+    font-size: 36px;
+    color: red;
+}
+.TPTN {
+    color: rgb(131, 49, 238);
+    font-size: 36px;
+}
+.steps {
+    color: rgb(252, 137, 91);
+}
+#example-table-container {
+    animation: fade-in 2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    opacity: 0;
+}
+table {
+    animation: fade-in 2s ease-in-out;
+}
+
+.slide-out {
+    transform: translateX(-100%);
+}
+
+.slide-in {
+    transform: translateX(0);
+}
